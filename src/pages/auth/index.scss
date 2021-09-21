@@ -17,11 +17,17 @@ width: 100%;
 }
 .login-text{
     color: $light_gray_color;
-    font-size: small;
+    font-size: 12px;
+    margin-right: 12.8%;
+}
+.login_text_bottom{
+    color: $light_gray_color;
+    font-weight: 600;
 }
 .login-title{
-    font-weight: bold;
+    font-weight: 600;
     font-size: x-large;
+    color: black;
 }
 
 .login-logo{
