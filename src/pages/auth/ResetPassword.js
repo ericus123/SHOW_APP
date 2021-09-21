@@ -1,10 +1,10 @@
 import { Row } from "antd";
 import { useHistory } from "react-router";
-import ForgortPasswordForm from "../../components/forms/ForgotPasswordForm";
+import ResetPasswordForm from "../../components/forms/ResetPasswordForm";
 import AuthLayout from "../../layouts/AuthLayout";
 import { assets } from "../../utils/assets";
 
-const ForgotPassword = () => {
+const ResetPassword = () => {
 
     const history = useHistory();
 
@@ -15,16 +15,16 @@ const ForgotPassword = () => {
              <img className="login-logo" src={assets.red_logo} />
          </Row>
          <Row className="login-texts-row">
-             <h1 className="login-title">Forgot password</h1>
-             <p className="login-text">User your ShowApp email to login to reset your<br/>password.</p>
+             <h1 className="login-title">Set new password</h1>
+             <p className="login-text">Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit.</p>
          </Row>
          <Row className="form-row">
-         <ForgortPasswordForm/>
+         <ResetPasswordForm/>
          </Row>
-             <p className="login_text_bottom">Back to?<span onClick={() => history.push("/")} className="txt_color_red cursor_pointer">&nbsp;Login</span></p>
+             <p className="login_text_bottom">Recall password?<span onClick={() => history.push("/")} className="txt_color_red cursor_pointer">&nbsp;Login</span></p>
      </div>
         </AuthLayout>
     );
 };
 
-export default ForgotPassword;
+export default ResetPassword;

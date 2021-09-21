@@ -1,7 +1,10 @@
 import { Formik } from "formik";
+import { useHistory } from "react-router";
 import "./index.scss";
 
-const LoginForm = () => {
+const ForgortPasswordForm = () => {
+
+  const history = useHistory();
     return (
          <Formik
        initialValues={{ email: "", password: "" }}
@@ -19,6 +22,7 @@ const LoginForm = () => {
        onSubmit={(values, { setSubmitting }) => {
          setTimeout(() => {
            setSubmitting(false);
+           history.push("reset-password");
          }, 400);
        }}
      >
@@ -40,26 +44,14 @@ const LoginForm = () => {
              onChange={handleChange}
              onBlur={handleBlur}
              value={values.email}
+             disabled={isSubmitting}
              placeholder="Email"
            />
            <br/>
-          <span className="txt_color_red"> {errors.email && touched.email && errors.email}</span>
+           <span className="txt_color_red"> {errors.email && touched.email && errors.email}</span>
             <br/>
-            <span className="input-label">Password</span>
-           <input
-         className="form-input"
-             type="password"
-             name="password"
-             onChange={handleChange}
-             onBlur={handleBlur}
-             value={values.password}
-             placeholder="Enter password"
-           />
- <br/>
-           <span className="txt_color_red">{errors.password && touched.password && errors.password}</span>
-
            <button className="form-btn" type="submit" disabled={isSubmitting}>
-             Login
+             Submit
            </button>
          </form>
        )}
@@ -67,4 +59,4 @@ const LoginForm = () => {
     );
 };
 
-export default LoginForm;
+export default ForgortPasswordForm;

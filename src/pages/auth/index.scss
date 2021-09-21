@@ -2,8 +2,9 @@
 
 .login-comp{
 height: 100%;
-width: 100%;
+width: 80%;
 margin-left: 10%;
+margin-right: 10%;
 }
 
 .form-row{
@@ -17,17 +18,11 @@ width: 100%;
 }
 .login-text{
     color: $light_gray_color;
-    font-size: 12px;
-    margin-right: 12.8%;
-}
-.login_text_bottom{
-    color: $light_gray_color;
-    font-weight: 600;
+    font-size: small;
 }
 .login-title{
-    font-weight: 600;
+    font-weight: bold;
     font-size: x-large;
-    color: black;
 }
 
 .login-logo{

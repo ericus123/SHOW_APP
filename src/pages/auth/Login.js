@@ -16,7 +16,7 @@ const Login = () => {
              <img className="login-logo" src={assets.red_logo} />
          </Row>
          <Row className="login-texts-row">
-             <h1 className="login-title">Organizer Login</h1>
+             <h1 className="login-title">Organizer login</h1>
              <p className="login-text">User your company email to login.</p>
          </Row>
          <Row className="form-row">
