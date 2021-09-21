@@ -1,13 +1,13 @@
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { RouteNames } from "../config/RouteNames";
-import AuthLayout from "../layouts/AuthLayout";
+import Login from "../pages/auth/Login";
 
 
 const Routes = () => {
 return (
     <Router>
         <Switch>
-        <Route exact path={RouteNames.auth} component={AuthLayout} />
+        <Route exact path={RouteNames.login} component={Login} />
         </Switch>
     </Router>
 );

@@ -1,16 +1,16 @@
-import {} from "antd";
-import { Content } from "antd/lib/layout/layout";
+// import { Content } from "antd/lib/layout/layout";
 import "./index.scss";
 
-const AuthLayout = () => {
+const AuthLayout = ({children}) => {
+
    return (
 
-<Content className="auth-layout">
+<div className="auth-layout">
 
-    <Content className="auth-layout-content">
-
-    </Content>
-</Content>
+    <div className="auth-layout-content">
+     {children}
+    </div>
+</div>
 
    );
 };

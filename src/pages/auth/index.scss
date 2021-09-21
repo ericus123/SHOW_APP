@@ -1,0 +1,31 @@
+@import "../../styles/scss/variables.scss";
+
+.login-comp{
+height: 100%;
+width: 100%;
+margin-left: 10%;
+}
+
+.form-row{
+width: 100%;
+}
+.login_text_bottom{
+    text-align: center;
+    margin: 10% 0% 10% -15%;
+}
+.login-texts-row{
+}
+.login-text{
+    color: $light_gray_color;
+    font-size: small;
+}
+.login-title{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.login-logo{
+    height: 5vh;
+    width: 5vh;
+    margin: 7.5% 0% 7.5% 0%;
+}

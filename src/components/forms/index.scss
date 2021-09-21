@@ -1,0 +1,20 @@
+@import "../../styles/scss//variables.scss";
+
+.form-input{
+ height: 6vh;
+ margin: 5% 0% 5% 0%;
+ border: none;
+ fill: white;
+ border-bottom: 2px solid $red_background;
+ border-radius: none;
+ width: 100% !important;
+}
+.form-btn{
+ background: $red_background;
+ border: none;
+ width: 100%;
+ color: white;
+ margin-top: 5%;
+ height: 6vh;
+ cursor: pointer;
+}
