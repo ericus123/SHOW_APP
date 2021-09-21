@@ -10,6 +10,7 @@ const AuthLayout = ({children}) => {
 </div>
 
     <div className="auth-layout-content">
+       <div className="auth-layout-div"></div>
      {children}
     </div>
 </>
