@@ -1,7 +1,18 @@
 import { Formik } from "formik";
 import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+
 
 const LoginForm = () => {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const eye = <FontAwesomeIcon icon={faEye} />;
+  const eye_slash = <FontAwesomeIcon icon={faEyeSlash} />;
+
+  const tooglePasswordVisibilty = () => {
+    setPasswordVisible(!passwordVisible);
+  };
     return (
          <Formik
        initialValues={{ email: "", password: "" }}
@@ -48,13 +59,14 @@ const LoginForm = () => {
             <span className="input-label">Password</span>
            <input
          className="form-input"
-             type="password"
+             type={passwordVisible ? "text" : "password"}
              name="password"
              onChange={handleChange}
              onBlur={handleBlur}
              value={values.password}
              placeholder="Enter password"
            />
+            <i onClick={tooglePasswordVisibilty} className="eye-icon">{passwordVisible ? eye_slash : eye }</i>
  <br/>
            <span className="txt_color_red">{errors.password && touched.password && errors.password}</span>
 

@@ -16,7 +16,7 @@ const ForgotPassword = () => {
          </Row>
          <Row className="login-texts-row">
              <h1 className="login-title">Forgot password</h1>
-             <p className="login-text">User your ShowApp email to login to reset your<br/>password.</p>
+             <p className="login-text">User your ShowApp email to login to reset your password.</p>
          </Row>
          <Row className="form-row">
          <ForgortPasswordForm/>

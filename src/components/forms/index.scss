@@ -8,6 +8,7 @@
  border-bottom: 2px solid $red_color;
  border-radius: none;
  width: 100% !important;
+ outline: none;
 }
 .input-label{
 font-size: 12px;
@@ -22,4 +23,23 @@ font-weight: 600;
  margin-top: 5%;
  height: 6vh;
  cursor: pointer;
+}
+.eye-icon{
+  position: absolute;
+  top: 62.5%;
+  margin-left: -7.5%;
+  color: $light_gray_color;
+  :hover {
+  cursor: pointer;
+}
+}
+
+.eye-icon-reset-pass{
+  position: absolute;
+  top: 55%;
+  margin-left: -5%;
+  color: $light_gray_color;
+  :hover {
+  cursor: pointer;
+}
 }

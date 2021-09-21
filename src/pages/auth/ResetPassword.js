@@ -16,7 +16,7 @@ const ResetPassword = () => {
          </Row>
          <Row className="login-texts-row">
              <h1 className="login-title">Set new password</h1>
-             <p className="login-text">Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit.</p>
+             <p className="login-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
          </Row>
          <Row className="form-row">
          <ResetPasswordForm/>
