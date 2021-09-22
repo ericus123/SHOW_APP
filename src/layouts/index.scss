@@ -107,3 +107,48 @@ margin-left: 25%;
     }
 }
 }
+
+.menu-data-wrapper{
+   margin-left: auto !important;
+   margin-right: 5%;
+}
+
+//Menu
+.menu-data-wrapper{
+   justify-content: center !important;
+   align-content: center !important;
+   align-self: center !important;
+   margin-top: 2%;
+}
+.menu-user-col{
+    .menu-user-icon{
+        height: 5.5vh;
+        width: 50px;
+    }
+    margin-bottom: -10% !important;
+}
+.menu-help-col{
+    .menu-help-icon{
+        height: 3vh;
+        width: 20px;
+        transform: scale(1);
+        transition: transition 1s;
+        color: $light_gray_color;
+    }
+}
+.menu-notification-col{
+    .menu-notification-icon{
+        height: 3vh;
+        width: 20px;
+        transform: scale(1);
+        transition: transition 1s;
+    }
+}
+.profile-menu-name{
+  margin-top: -12.5px;
+  font-size: 12px;
+}
+
+.menu-user-row{
+    margin-top: 5%;
+}

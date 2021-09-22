@@ -76,6 +76,28 @@ color: white !important;
 .txt_bold{
     font-weight: bold !important;
 }
+
+.hover_color_red{
+    :hover{
+        color: $red_color;
+         transition: .3s ease-in-out;
+    }
+}
+.hover_bg_red{
+    :hover{
+        background: $red_color;
+        transition: .3s ease-in-out;
+    }
+}
+
+.smooth_transform{
+   
+   :hover{
+   transform: scale(1.2);
+    transition: .2 ease-in-out;    
+   } 
+}
+
 /* FONT WEIGHT */
 
 .txt_font_weight_100{

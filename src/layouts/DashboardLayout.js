@@ -1,10 +1,11 @@
 import { Col, Layout, Row } from "antd";
 import { children, useState } from "react";
 import { assets } from "../utils/assets";
+import "../styles/scss/project_theme.scss";
 
 const { Header, Sider, Content } = Layout;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import{faCog, faUser} from "@fortawesome/free-solid-svg-icons";
+import{faCog, faUser, faQuestionCircle, faUserCircle, faBell} from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router";
 
 const DashboardLayout = () => {
@@ -49,7 +50,12 @@ const DashboardLayout = () => {
             <Col span={8}>
             <p className="dashboard-home-title txt_bold txt_subtitle">Organizer Portal</p>
             </Col>
-            <Col span={16}>
+            <Col span={4} className="menu-data-wrapper">
+              <Row gutter={[]}>
+                <Col span={3} className="menu-help-col"><FontAwesomeIcon className="menu-help-icon smooth_transform cursor_pointer hover_color_red" icon={faQuestionCircle}/></Col>
+                <Col span={18} className="menu-user-col"><Row className="menu-user-row"><Col><FontAwesomeIcon className="menu-user-icon" icon={faUserCircle}/> </Col> <Col><p className="profile-menu-name">Yves Honore</p></Col></Row></Col>
+                <Col span={3} className="menu-notification-col"> <FontAwesomeIcon className="menu-notification-icon smooth_transform cursor_pointer hover_color_red" icon={faBell} /></Col>
+              </Row>
             </Col>
           </Row>
           </Header>
