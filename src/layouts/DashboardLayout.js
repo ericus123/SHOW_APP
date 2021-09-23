@@ -6,13 +6,24 @@ const { Header, Sider, Content } = Layout;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import{faCog, faUser, faQuestionCircle, faUserCircle, faBell} from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router";
+import NotificationDrawer from "../components/drawers/NotificationDrawer";
 
 const DashboardLayout = ({children}) => {
   const [tab, setTab] = useState("home");
+  const [visible, setVisible] = useState(false);
+
+  const handleShow = () => {
+    setVisible(true);
+  };
+  const handleClose = () => {
+    setVisible(false);
+  };
+
 
   const history = useHistory();
     return (
       <Layout>
+         <NotificationDrawer visible={visible} handleClose={handleClose}/>
         <Sider width="110" className="side-bar" trigger={null} collapsible collapsed={false}>
           <div className="logo">
           <img src={assets.red_logo}/>
@@ -53,7 +64,7 @@ const DashboardLayout = ({children}) => {
               <Row gutter={[]}>
                 <Col span={3} className="menu-help-col"><FontAwesomeIcon className="menu-help-icon smooth_transform cursor_pointer hover_color_red " icon={faQuestionCircle}/></Col>
                 <Col span={18} className="menu-user-col"><Row className="menu-user-row"><Col><FontAwesomeIcon className="menu-user-icon" icon={faUserCircle}/> </Col> <Col><p className="profile-menu-name">Yves Honore</p></Col></Row></Col>
-                <Col span={3} className="menu-notification-col"> <FontAwesomeIcon className="menu-notification-icon smooth_transform cursor_pointer  hover_color_red" icon={faBell} /></Col>
+                <Col span={3} className="menu-notification-col"> <FontAwesomeIcon className="menu-notification-icon smooth_transform cursor_pointer  hover_color_red" onClick={handleShow} icon={faBell} /></Col>
               </Row>
             </Col>
           </Row>
