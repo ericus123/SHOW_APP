@@ -15,6 +15,13 @@ body{
 /* TYPOGRAPHY */
 .txt_center{
     text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hover_color_black{
+    :hover{
+        color: black !important;
+    }
 }
 .txt_large{
     font-size: 64px;
@@ -59,11 +66,20 @@ body{
 .bg_dark_blue{
     background: $main_blue !important;
 }
+.bg_red{
+ background: $red_color; 
+}
 .btn_small{
     height: 5vh;
 }
 .text_color_white{
 color: white !important;
+}
+.border_none{
+    border: none;
+}
+.outline_none{
+    outline: none;
 }
 .txt_color_red{
  color: $red_color;
@@ -98,6 +114,10 @@ color: white !important;
    } 
 }
 
+.progres_40{
+
+}
+
 /* FONT WEIGHT */
 
 .txt_font_weight_100{
@@ -118,6 +138,9 @@ color: white !important;
 
 .txt_blue{
     color: #1769FF !important
+}
+.txt_red{
+    color: $red_color !important;
 }
 .txt_dark_blue{
     color: $main_blue !important
@@ -145,6 +168,10 @@ color: white !important;
 .cursor_pointer{
     cursor: pointer;
 }
+
+.button_hover_shadow :hover{
+        background-color: #92202c !important;
+    }
 
 /* BACKGROUND COLORS */
 
