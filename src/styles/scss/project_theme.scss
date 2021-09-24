@@ -23,6 +23,11 @@ body{
         color: black !important;
     }
 }
+.hover_color_white{
+    :hover{
+        color: white !important;
+    }
+}
 .txt_large{
     font-size: 64px;
     font-weight: 700;
@@ -101,7 +106,7 @@ color: white !important;
 }
 .hover_bg_red{
     :hover{
-        background: $red_color;
+        background-color: $red_color !important;
         transition: .3s ease-in-out;
     }
 }
@@ -169,8 +174,9 @@ color: white !important;
     cursor: pointer;
 }
 
-.button_hover_shadow :hover{
+.button_hover_shadow:hover{
         background-color: #92202c !important;
+        border: 2px solid #92202c !important;
     }
 
 /* BACKGROUND COLORS */
@@ -258,36 +264,99 @@ color: white !important;
 /* SPACING */
 
 .pad0{
-    padding: 0px;
+    padding: 0px !important;
 }
 
 .pad16{
-    padding: 16px;
+    padding: 16px !important;
 }
 
 .pad32{
-    padding: 32px;
+    padding: 32px !important;
 }
 
 .pad64{
-    padding: 64px;
+    padding: 64px !important;
 }
 
+.padt0{
+    padding-top: 0px !important;
+}
+
+.padt16{
+    padding-top: 16px !important;
+}
+
+.padt32{
+    padding-top: 32px !important;
+}
+
+.padt64{
+    padding-top: 64px !important;
+}
+
+.padb0{
+    padding-bottom: 0px !important;
+}
+
+.padb16{
+    padding-bottom: 16px !important;
+}
+
+.padb32{
+    padding-bottom: 32px !important;
+}
+
+.padb64{
+    padding-bottom: 64px !important;
+}
+
+.padr0{
+    padding-right: 0px !important;
+}
+
+.padr16{
+    padding-right: 16px !important;
+}
+
+.padr32{
+    padding-right: 32px !important;
+}
+
+.padr64{
+    padding-right: 64px !important;
+}
+
+.padl0{
+    padding-left: 0px !important;
+}
+
+.padl16{
+    padding-left: 16px !important;
+}
+
+.padl32{
+    padding-left: 32px !important;
+}
+
+.padl64{
+    padding-left: 64px !important;
+}
 
 .mabo0{
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 
 .mabo16{
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
 }
 
 .mabo32{
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
 }
 
 .mabo64{
-    margin-bottom: 64px;
+    margin-bottom: 64px !important;
 }
 
 

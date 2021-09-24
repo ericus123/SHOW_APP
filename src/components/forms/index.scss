@@ -5,7 +5,7 @@
  margin: 0% 0% 5% 0%;
  border: none;
  fill: white;
- border-bottom: 2px solid $light_gray_color;
+ border-bottom: 2px solid $gray_color;
  border-radius: none;
  width: 100% !important;
  outline: none;
@@ -14,6 +14,26 @@
 .form-input:focus-visible{
     border-bottom: 2px solid $red_color !important;
     transition: .5s ease-in-out;
+}
+.form-input:focus{
+ border-bottom: 2px solid $red_color;
+ }
+ .form-input-select{
+   background-color: white;
+ }
+
+.form-input-description{
+ height: 6vh;
+ margin: 0% 0% 5% 0%;
+ border: none;
+ fill: white;
+ border-bottom: 2px solid $gray_color;
+ border-radius: none;
+ width: 700px !important;
+ outline: none;
+}
+.form-input-description:focus{
+   border-bottom: 2px solid $red_color;
 }
 .input-label{
 font-size: 12px;
@@ -51,3 +71,16 @@ font-weight: 600;
   cursor: pointer;
 }
 }
+.date-input{
+  height: 6vh;
+ margin: 0% 0% 5% 0%;
+ border: none;
+ fill: white;
+ border-bottom: 2px solid $gray_color;
+ border-radius: none;
+ width: 100% !important;
+ outline: none; 
+}
+.date-input:focus{
+ border-bottom: 2px solid $red_color;
+ }

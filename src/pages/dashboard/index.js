@@ -10,13 +10,25 @@ import EventCard from "../../components/cards/EventCard";
 import { SquareCard } from "../../components/cards";
 import StatsCard from "../../components/cards/StatsCard";
 import "../../styles/scss/project_theme.scss";
+import AddEventModal from "../../components/modals";
+import { useState } from "react";
 
 
 
 const DashboardHome = () => {
 
-return (
+const [visible, setVisible] = useState(false);
+
+const handleClose = () => {
+  setVisible(false);
+};
+
+const handleOpen = () => {
+  setVisible(true);
+};
+return (  
     <DashboardLayout>
+      <AddEventModal handleClose={handleClose} handleOpen={handleOpen} visible={visible}/>
             <Row className="dash-home-row">
 <Col span={18} className="dash-homepage-left">
   <Content className="homepage-content">
@@ -27,7 +39,7 @@ return (
       </h1>
       <br/>
       <br/>
-      <button className="event-btn bg_red border_none outline_none color_white text_color_white cursor_pointer button_hover_shadow">Create event</button>
+      <button className="event-btn bg_red border_none outline_none color_white text_color_white cursor_pointer button_hover_shadow" onClick={() => setVisible(true)}>Create event</button>
     </Content>
   
   </Content>
