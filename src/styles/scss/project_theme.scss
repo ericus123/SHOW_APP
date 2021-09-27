@@ -15,18 +15,6 @@ body{
 /* TYPOGRAPHY */
 .txt_center{
     text-align: center !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-.hover_color_black{
-    :hover{
-        color: black !important;
-    }
-}
-.hover_color_white{
-    :hover{
-        color: white !important;
-    }
 }
 .txt_large{
     font-size: 64px;
@@ -71,20 +59,11 @@ body{
 .bg_dark_blue{
     background: $main_blue !important;
 }
-.bg_red{
- background: $red_color; 
-}
 .btn_small{
     height: 5vh;
 }
 .text_color_white{
 color: white !important;
-}
-.border_none{
-    border: none;
-}
-.outline_none{
-    outline: none;
 }
 .txt_color_red{
  color: $red_color;
@@ -106,7 +85,7 @@ color: white !important;
 }
 .hover_bg_red{
     :hover{
-        background-color: $red_color !important;
+        background: $red_color;
         transition: .3s ease-in-out;
     }
 }
@@ -117,10 +96,6 @@ color: white !important;
    transform: scale(1.2);
     transition: .2 ease-in-out;    
    } 
-}
-
-.progres_40{
-
 }
 
 /* FONT WEIGHT */
@@ -143,9 +118,6 @@ color: white !important;
 
 .txt_blue{
     color: #1769FF !important
-}
-.txt_red{
-    color: $red_color !important;
 }
 .txt_dark_blue{
     color: $main_blue !important
@@ -173,11 +145,6 @@ color: white !important;
 .cursor_pointer{
     cursor: pointer;
 }
-
-.button_hover_shadow:hover{
-        background-color: #92202c !important;
-        border: 2px solid #92202c !important;
-    }
 
 /* BACKGROUND COLORS */
 
@@ -264,99 +231,36 @@ color: white !important;
 /* SPACING */
 
 .pad0{
-    padding: 0px !important;
+    padding: 0px;
 }
 
 .pad16{
-    padding: 16px !important;
+    padding: 16px;
 }
 
 .pad32{
-    padding: 32px !important;
+    padding: 32px;
 }
 
 .pad64{
-    padding: 64px !important;
+    padding: 64px;
 }
 
-.padt0{
-    padding-top: 0px !important;
-}
-
-.padt16{
-    padding-top: 16px !important;
-}
-
-.padt32{
-    padding-top: 32px !important;
-}
-
-.padt64{
-    padding-top: 64px !important;
-}
-
-.padb0{
-    padding-bottom: 0px !important;
-}
-
-.padb16{
-    padding-bottom: 16px !important;
-}
-
-.padb32{
-    padding-bottom: 32px !important;
-}
-
-.padb64{
-    padding-bottom: 64px !important;
-}
-
-.padr0{
-    padding-right: 0px !important;
-}
-
-.padr16{
-    padding-right: 16px !important;
-}
-
-.padr32{
-    padding-right: 32px !important;
-}
-
-.padr64{
-    padding-right: 64px !important;
-}
-
-.padl0{
-    padding-left: 0px !important;
-}
-
-.padl16{
-    padding-left: 16px !important;
-}
-
-.padl32{
-    padding-left: 32px !important;
-}
-
-.padl64{
-    padding-left: 64px !important;
-}
 
 .mabo0{
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
 }
 
 .mabo16{
-    margin-bottom: 16px !important;
+    margin-bottom: 16px;
 }
 
 .mabo32{
-    margin-bottom: 32px !important;
+    margin-bottom: 32px;
 }
 
 .mabo64{
-    margin-bottom: 64px !important;
+    margin-bottom: 64px;
 }
 
 
