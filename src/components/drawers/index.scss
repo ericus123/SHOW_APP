@@ -1,0 +1,71 @@
+@import "../../styles//scss/variables.scss";
+@import "../../styles/scss/project_theme.scss";
+
+.notifications-title{
+    color: white !important;
+font-size: 24px !important;
+padding-left: 20px;
+font-weight: bold;
+}
+.ant-drawer-header{
+   padding: 0% !important;
+   margin: 0% !important;
+   height: 25vh !important;
+//    background-color: $red_color;
+   display: flex;
+   color: white !important;
+}
+.ant-drawer-body{
+   padding: 0% !important;
+   margin: 0% !important;
+}
+.notification-user-avatar{
+    font-size: 40px;
+}
+.notification-caret-right-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .notification-caret-right{
+    font-size: 30px;
+    color: $dark_gray_color;
+}  
+}
+
+.notification-desc{
+    font-size: 12px !important;
+    color: black !important;
+}
+
+.notification-date{
+    font-size: 12px !important;
+    color: $dark_gray_color;
+}
+.notification-row{
+    cursor: pointer;
+    padding: 5% !important;
+}
+.notification-row:hover{
+    background-color: #f5f8fa !important;
+}
+.notification-panel-lower-header{
+    background: $dark_red_color !important;
+width: 500px !important;
+height: 8.5vh !important;
+bottom: 0 !important;
+}
+.notification-panel-header{
+    background: $red_color !important;
+    height: 12vh !important;
+}
+.notifications-filter-txt{
+    font-size: 12px !important;
+    color: rgb(232, 232, 232) !important;
+    padding-left: 20px;
+    padding-top: 12.5px;
+}
+.filter-drop-down{
+    float: right !important;
+    margin-right: 5% !important;
+    font-weight: bold !important;
+}

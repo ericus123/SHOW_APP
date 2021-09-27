@@ -54,6 +54,9 @@ body{
     font-weight: 300;
     line-height: calc(18px * 2);
 }
+.txt_color_gray{
+    color: $dark_gray_color !important;
+}
 
 .txt_caption{
     font-size: 14px;
