@@ -5,10 +5,15 @@
  margin: 0% 0% 5% 0%;
  border: none;
  fill: white;
- border-bottom: 2px solid $red_color;
+ border-bottom: 2px solid $light_gray_color;
  border-radius: none;
  width: 100% !important;
  outline: none;
+ transition: border-bottom .5s;
+}
+.form-input:focus-visible{
+    border-bottom: 2px solid $red_color !important;
+    transition: .5s ease-in-out;
 }
 .input-label{
 font-size: 12px;

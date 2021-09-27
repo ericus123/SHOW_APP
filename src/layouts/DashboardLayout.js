@@ -1,14 +1,13 @@
 import { Col, Layout, Row } from "antd";
-import { children, useState } from "react";
+import {useState } from "react";
 import { assets } from "../utils/assets";
 import "../styles/scss/project_theme.scss";
-
 const { Header, Sider, Content } = Layout;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import{faCog, faUser, faQuestionCircle, faUserCircle, faBell} from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router";
 
-const DashboardLayout = () => {
+const DashboardLayout = ({children}) => {
   const [tab, setTab] = useState("home");
 
   const history = useHistory();
@@ -21,17 +20,17 @@ const DashboardLayout = () => {
          <div className="dashboard-side-bar">
           <div className="side-bar-tab"  onClick={() => setTab("home")}>
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className={`${tab === "home" ?  "home-icon-active" : "home-icon"}`} viewBox="0 0 24 24"><path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"/></svg>
-          <h3>Home</h3>
+          <h3 className={`${tab === "home" ?  "txt_red" : ""}`}>Home</h3>
           </div>
           <br/>
             <div className="side-bar-tab"  onClick={() => setTab("profile")}>
            <FontAwesomeIcon icon={faUser} className={`${tab === "profile" ?  "home-icon-active" : "home-icon"}`} />
-          <h3>Profile</h3>
+          <h3 className={`${tab === "profile" ?  "txt_red" : ""}`} >Profile</h3>
           </div>
             <br/>
             <div className="side-bar-tab"  onClick={() => setTab("settings")}>
            <FontAwesomeIcon icon={faCog} className={`${tab === "settings" ?  "home-icon-active" : "home-icon"}`} />
-          <h3>Settings</h3>
+          <h3 className={`${tab === "settings" ?  "txt_red" : ""}`} >Settings</h3>
           </div>
           <br/>
           <br/>
@@ -52,9 +51,9 @@ const DashboardLayout = () => {
             </Col>
             <Col span={4} className="menu-data-wrapper">
               <Row gutter={[]}>
-                <Col span={3} className="menu-help-col"><FontAwesomeIcon className="menu-help-icon smooth_transform cursor_pointer hover_color_red" icon={faQuestionCircle}/></Col>
+                <Col span={3} className="menu-help-col"><FontAwesomeIcon className="menu-help-icon smooth_transform cursor_pointer hover_color_red " icon={faQuestionCircle}/></Col>
                 <Col span={18} className="menu-user-col"><Row className="menu-user-row"><Col><FontAwesomeIcon className="menu-user-icon" icon={faUserCircle}/> </Col> <Col><p className="profile-menu-name">Yves Honore</p></Col></Row></Col>
-                <Col span={3} className="menu-notification-col"> <FontAwesomeIcon className="menu-notification-icon smooth_transform cursor_pointer hover_color_red" icon={faBell} /></Col>
+                <Col span={3} className="menu-notification-col"> <FontAwesomeIcon className="menu-notification-icon smooth_transform cursor_pointer  hover_color_red" icon={faBell} /></Col>
               </Row>
             </Col>
           </Row>
@@ -62,8 +61,6 @@ const DashboardLayout = () => {
           <Content
             className="site-layout-background"
             style={{
-              margin: "24px 16px",
-              padding: 24,
               minHeight: 280,
             }}
           >
