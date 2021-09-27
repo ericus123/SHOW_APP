@@ -1,0 +1,82 @@
+@import "../../styles//scss/variables.scss";
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: $light_gray_color; 
+}
+
+.dash-home-row{
+    width: 100%;
+    height: 100%;
+    .dash-homepage-left{
+        height: 85vh; 
+        overflow-y: scroll;
+    }
+    .dash-homepage-right{
+        height: 85vh;
+        overflow-y: scroll;
+    }
+}
+.new-event-img{
+    max-height: 40vh;
+}
+.homepage-content{
+    background: #1a2b3c;
+    height: 80%;
+    display: flex;
+}
+.homepage-content-right{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    .homepage-content-right-txt{
+    font-size: 50px !important;
+    font-weight: 600 !important;
+    margin-bottom: 0px !important;
+    color: white;
+    }
+}
+.event-btn{
+    height: 6vh;
+    width: 60% !important;
+    font-size: 14px;
+    background-color: $red_color;
+    transition: background-color .3s;
+}
+.event-btn:hover{
+ background-color: #92202c !important;
+ transition: background-color .3s;
+}
+.dash-homepage-left{
+    padding: 2.5%;
+    overflow: scroll;
+}
+.dash-homepage-right{
+    background: white;
+}
+.recent-events{
+    margin-bottom: 5% !important;
+}
+.events-title{
+    font-size: 24px !important;
+    margin-top: 7.5% !important;
+    margin-bottom: 5% !important;
+}
+.event-stats-card{
+    width: 230px;
+    margin: auto;
+    box-shadow: 0px -3px 40px 0px rgb(0 0 0 / 4%);
+}
+
+.stats-data-cards{
+ margin-left: 10%;
+}
+.stat-title{
+    padding: 25px 0px 0px 25px  !important;
+}
